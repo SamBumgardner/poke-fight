@@ -15,10 +15,10 @@ class PlayState extends FlxState
 		super.create();
 
 		var map = generateBasicMap();
-		var heroInput0 = new HeroInput(FlxKey.LEFT, FlxKey.RIGHT, FlxKey.DOWN, FlxKey.UP);
+		var heroInput0 = new HeroInput(FlxKey.UP, FlxKey.LEFT, FlxKey.DOWN, FlxKey.RIGHT);
 		add(new Hero(map, 0, 0, FlxDirection.RIGHT, heroInput0));
 
-		var heroInput1 = new HeroInput(FlxKey.A, FlxKey.D, FlxKey.S, FlxKey.W);
+		var heroInput1 = new HeroInput(FlxKey.W, FlxKey.A, FlxKey.S, FlxKey.D);
 		add(new Hero(map, 2, 2, FlxDirection.LEFT, heroInput1));
 	}
 

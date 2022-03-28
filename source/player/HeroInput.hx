@@ -25,7 +25,8 @@ class HeroInput
 		rebindInput(leftInput, rightInput, retreatInput, advanceInput);
 	}
 
-	public inline function rebindInput(leftInput:Int, rightInput:Int, retreatInput:Int, advanceInput:Int)
+	public inline function rebindInput(advanceInput:Int, leftInput:Int, retreatInput:Int,
+			rightInput:Int)
 	{
 		this.leftInput = leftInput;
 		this.rightInput = rightInput;
